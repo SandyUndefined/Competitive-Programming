@@ -16,7 +16,17 @@ class Solution:
         return root
 
     def getHeight(self,root):
-        #Write your code here
+        if root is None:
+            return -1
+        else:
+            ldepth = self.getHeight(root.left)
+            rdepth = self.getHeight(root.right)
+
+            if ldepth > rdepth :
+                return ldepth+1
+            else:
+                return rdepth+1
+
 
 T=int(input())
 myTree=Solution()
