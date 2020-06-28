@@ -18,6 +18,12 @@ class Solution:
         return root
 
     def levelOrder(self,root):
+        q = [root]
+        for _ in q:
+            if _:
+                print(_.data, end=' ')
+                q.append(_.left)
+                q.append(_.right)
 
 
 T=int(input())
