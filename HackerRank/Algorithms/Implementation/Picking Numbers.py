@@ -1,5 +1,12 @@
 def pickingNumbers(a):
-    for i in range(0,len(a)):
+    maxi = 0
+    for i in a:
+        c=a.count(i)
+        d=a.count(i-1)
+        c=c+d
+        if c> maxi:
+            maxi =c
+    print(maxi)
 
 
 if __name__ == '__main__':
