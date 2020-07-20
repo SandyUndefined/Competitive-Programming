@@ -1,4 +1,6 @@
 def acmTeam(topic):
+    return
+
 
 if __name__ == '__main__':
     nm = input().split()
@@ -13,4 +15,4 @@ if __name__ == '__main__':
         topic_item = input()
         topic.append(topic_item)
 
-     acmTeam(topic)
+    acmTeam(topic)
